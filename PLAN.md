@@ -29,14 +29,16 @@ Minden szolgáltatás külön konténerben fog futni és saját végponton keres
 Ha külön szerveren van futtatva program, akkor a webes felületről érhető csak el a mi eszközünkről a scanner, vagy ssh-n keresztül a szerveren futtatva a CLI-ből.
 
 A publikus oldal nem a scanner infrastruktúra része.
-
-Platformfüggetlenség van tervben (Windows, Linux, macOS) alapú platformokon is működjön.
+`
+Platformfüggetlenség van tervben (Windows, Linux, macOS) alapú plat`formokon is működjön.
 
 Minden személy, aki a repot klónozza, az saját lokálisan telepített példányt kap, amelyhez kizárólag az fér hozzá, aki az eszközhöz is hozzáfér. Így a program bármelyik komponensét szabadon lehet módosítani.
 
 Bash parancsként is lehet futtatni, de ez csak ugyan azt a cli-bol indithato python kodot futtatja, amely meghivja a scannert.
 
-A rendszer Docker Compose segítségével telepíthető. 
+A rendszer Docker Compose segítségével telepíthető.
+
+![](er_diagram.png)
 
 ## Funkciók
 
@@ -67,12 +69,14 @@ A rendszer Docker Compose segítségével telepíthető.
 - TLS tanúsítványok ellenőrzése
 - Státuszkód ellenőrzése
 - Átirányítás ellenőrzése
+- HTML kommentek ellenőrzése
+- JavaScript kommentek ellenőrzése
 
 ## Webes analizáló publikus weboldalra
 - Minden webes analizáló funkció
 - Szerver ellenőrzése
 - Szever verzió alapján CVE keresése
-- Domain rekordok lekérdezése
+- DNS rekordok lekérdezése
 - Domain tulajdonos adatainak lekérdezése
 
 ## Futtatás és menedzsment
