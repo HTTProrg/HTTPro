@@ -103,7 +103,7 @@ Az adatok kapcsolatai a követkető képpen lesz megvalósítva.
 | Build eszköz | Vite |
 | Programozási nyelv | TypeScript |
 | Keretrendszer | React |
-| Dizájn | Costum CSS |
+| Dizájn | Custom CSS |
 | Egységtesztelés | Vitest |
 | Csomagkezelő | npm |
 
